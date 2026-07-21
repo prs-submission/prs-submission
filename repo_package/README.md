@@ -98,7 +98,7 @@ Each dataset must be a CSV file with one header/skip row, followed by one edge p
 ## Regenerating the paper's figures
 
 - **`make_figures.py [outputs.csv] [export_csv]`** — regenerates the main-body figures (largest clique minor found, running time, relative separator size, comparison to the densest-subgraph baseline, comparison to the treewidth bound) directly from `outputs.csv`. The baseline/treewidth comparison figures also read `Final results - export.csv`, a per-dataset table of treewidth upper bounds and densest-subgraph clique-minor estimates (see "Reproducing the paper's supporting baselines" below); a dataset with no matching row in that file is simply skipped for those two figures rather than erroring.
-- **`make_appendix_figures.py [outputs.csv]`** — regenerates the appendix figures (peak memory usage, full end-to-end search cost, and per-dataset sensitivity of the largest clique minor found to the constant multiplier `c`).
+- **`make_appendix_figures.py [outputs.csv]`** — regenerates the appendix figures used in the paper (full end-to-end search cost and per-dataset sensitivity of the largest clique minor found to the constant multiplier `c`), plus a peak-memory-usage figure (`fig_appendix_memory.png`) that is *not* included in the paper — its methodology needs further scrutiny before the numbers can be trusted — but is provided here for transparency and reuse.
 
 Both scripts require `matplotlib` in addition to `sortedcontainers`. Re-running either after `outputs.csv` is updated (e.g. once a pending dataset finishes) regenerates every figure from the current data with no other steps.
 

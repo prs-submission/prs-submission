@@ -1,12 +1,17 @@
 """
-Regenerate the paper's appendix figures/tables from outputs.csv.
+Regenerate the paper's appendix figures/tables from outputs.csv (plus one
+supplementary figure not used in the paper; see below).
 
 Reads final/outputs.csv (one row per (dataset, constant_multiplier) run)
 and writes:
   fig_appendix_memory.png       -- peak RSS (MB) vs. n, at the (dataset,
                                     const) row used for the main-body
                                     minor-size result (paper Fig. 4's
-                                    underlying run)
+                                    underlying run). NOT included in the
+                                    paper -- its methodology needs further
+                                    scrutiny before the numbers can be
+                                    trusted -- but generated here for
+                                    transparency and reuse.
   fig_appendix_runtime_full.png -- end-to-end time_elapsed_seconds (search
                                     + final run, at the const that gave the
                                     largest h*) vs. n, contrasted with the
