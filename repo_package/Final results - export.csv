@@ -1,0 +1,28 @@
+network,treewidth,alg_2.1 est
+Oldenburg,20,2.792682927
+San Francisco,98,2.530821918
+San Joaquin,43,2.488888889
+North America Road,40,3.249441549
+California Road,18,2.122093023
+Luxembourg,59,2.695652174
+Minnesota,30,3.2
+Belgium,192,3.474065139
+USroads,154,2.052473928
+road-asia-osm,157,3.377912334
+road-germany-osm,529,3.2
+road-GB-osm,310,3.444444444
+road-italy-osm,209,3.333333333
+road-netherlands-osm,137,3.2
+road-CA-osm,470,3.701492537
+road-PA-osm,396,3.333333333
+road-euroroad-osm,19,3.555555556
+facebook-combined,258,63.15555556
+tvshow_edges,205,61.90625
+public_figure_edges,1631,154.6930693
+musae_RU,876,40.8
+musae_PTBR,559,29.57377049
+musae_git,6052,69.59856631
+musae_facebook,2378,70
+lastfm_asia,658,17.16932907
+deezer_europe,4513,60.49030471
+HR_edges,n/a,32.74795444
